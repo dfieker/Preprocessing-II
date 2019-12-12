@@ -1,1 +1,21 @@
 // Mixins in here
+.border-top() {
+    border-top: 2px dashed lightgray;
+}
+
+.border-bottom() {
+    border-bottom: 2px dashed lightgray;
+}
+
+.btn-layout(@bgcolor, @width, @font-color) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background: @bgcolor;
+    width: @width;
+    color: @font-color;
+    height: 45px;
+    border-radius: 15px;
+    
+}
